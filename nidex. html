@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="hi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aadib Baiga | Data Scientist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#3a494a",
+                        "on-tertiary-fixed": "#1a1c20",
+                        "secondary-fixed-dim": "#c3c6cd",
+                        "secondary-fixed": "#e0e2e9",
+                        "on-tertiary": "#2f3035",
+                        "on-primary-fixed-variant": "#004f53",
+                        "on-tertiary-fixed-variant": "#45474b",
+                        "tertiary": "#faf9ff",
+                        "on-secondary-fixed": "#181c21",
+                        "primary-fixed-dim": "#00dce5",
+                        "surface-dim": "#051424",
+                        "surface-container-lowest": "#010f1f",
+                        "secondary": "#c3c6cd",
+                        "on-primary-container": "#006c71",
+                        "on-tertiary-container": "#606166",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#00f5ff",
+                        "surface-container-high": "#1c2b3c",
+                        "on-surface-variant": "#b9caca",
+                        "surface-tint": "#00dce5",
+                        "error-container": "#93000a",
+                        "primary": "#e9feff",
+                        "surface-bright": "#2c3a4c",
+                        "secondary-container": "#43474d",
+                        "error": "#ffb4ab",
+                        "inverse-surface": "#d4e4fa",
+                        "outline": "#849495",
+                        "tertiary-container": "#dddde3",
+                        "tertiary-fixed-dim": "#c6c6cc",
+                        "surface-variant": "#273647",
+                        "primary-fixed": "#63f7ff",
+                        "on-primary": "#003739",
+                        "on-background": "#d4e4fa",
+                        "surface-container": "#122131",
+                        "on-secondary-container": "#b2b5bc",
+                        "on-error": "#690005",
+                        "on-surface": "#d4e4fa",
+                        "background": "#051424",
+                        "on-primary-fixed": "#002021",
+                        "tertiary-fixed": "#e2e2e8",
+                        "on-secondary-fixed-variant": "#43474d",
+                        "surface-container-low": "#0d1c2d",
+                        "surface": "#051424",
+                        "on-secondary": "#2d3136",
+                        "inverse-on-surface": "#233143",
+                        "inverse-primary": "#00696e",
+                        "surface-container-highest": "#273647"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "unit": "8px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "code-label": ["JetBrains Mono"],
+                        "display-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-base": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "code-label": ["13px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-base": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0C10; /* Deep Obsidian */
+            background-image: radial-gradient(#1A1E23 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .glass-card {
+            background: rgba(26, 30, 35, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .ambient-glow {
+            position: absolute;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(0, 220, 229, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="text-on-background font-body-base antialiased relative overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto bg-background/80 backdrop-blur-xl border-b border-white/10 hidden md:flex">
+<div class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary-fixed-dim tracking-tighter">
+            Aadib Baiga
+        </div>
+<ul class="flex items-center gap-6">
+<li><a class="text-on-surface-variant font-medium font-code-label text-code-label hover:text-primary-fixed hover:transition-colors duration-300" href="#about">About</a></li>
+<li><a class="text-on-surface-variant font-medium font-code-label text-code-label hover:text-primary-fixed hover:transition-colors duration-300" href="#projects">Projects</a></li>
+<li><a class="text-on-surface-variant font-medium font-code-label text-code-label hover:text-primary-fixed hover:transition-colors duration-300" href="#skills">Skills</a></li>
+<li><a class="text-on-surface-variant font-medium font-code-label text-code-label hover:text-primary-fixed hover:transition-colors duration-300" href="#contact">Contact</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button class="text-primary-fixed-dim hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined">language</span>
+</button>
+<a class="bg-primary-fixed-dim text-on-primary-fixed px-6 py-2 rounded font-code-label text-code-label hover:bg-primary-fixed transition-colors" href="mailto:Ashish.baiga@com">
+                Hire Me
+            </a>
+</div>
+</nav>
+<!-- SideNavBar (Mobile) -->
+<div class="hidden lg:flex flex-col h-full fixed left-0 z-40 bg-surface-container-lowest/90 backdrop-blur-2xl border-r border-white/5 shadow-2xl shadow-primary/5 w-64 md:hidden">
+<div class="p-6 border-b border-white/5">
+<div class="font-display-lg-mobile text-display-lg-mobile text-primary-fixed-dim">
+                Aadib Baiga
+            </div>
+<p class="text-on-surface-variant font-body-sm text-body-sm mt-2">Data Scientist</p>
+</div>
+<ul class="flex-1 py-6 flex flex-col gap-2 px-4">
+<li><a class="flex items-center gap-3 px-4 py-3 bg-primary-container/20 text-primary-fixed-dim rounded-xl border-l-4 border-primary-fixed-dim font-body-sm text-body-sm active:translate-x-1" href="#home"><span class="material-symbols-outlined">terminal</span> Home</a></li>
+<li><a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/30 rounded-xl font-body-sm text-body-sm hover:bg-surface-container-high transition-all duration-200" href="#about"><span class="material-symbols-outlined">analytics</span> Analysis</a></li>
+<li><a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/30 rounded-xl font-body-sm text-body-sm hover:bg-surface-container-high transition-all duration-200" href="#projects"><span class="material-symbols-outlined">psychology</span> Models</a></li>
+<li><a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant/30 rounded-xl font-body-sm text-body-sm hover:bg-surface-container-high transition-all duration-200" href="#contact"><span class="material-symbols-outlined">database</span> Connect</a></li>
+</ul>
+<div class="p-6 border-t border-white/5">
+<a class="block w-full text-center bg-primary-fixed-dim text-on-primary-fixed px-4 py-2 rounded font-code-label text-code-label hover:bg-primary-fixed transition-colors mb-4" href="#">
+                Download CV
+            </a>
+<div class="flex justify-center gap-4">
+<a class="text-on-surface-variant hover:text-primary-fixed-dim" href="#"><span class="material-symbols-outlined">code</span></a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+</div>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-[100px] md:pt-[120px] pb-section-gap">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex flex-col justify-center items-start py-section-gap" id="home">
+<div class="ambient-glow top-0 left-[-10vw]"></div>
+<div class="font-code-label text-code-label text-primary-fixed-dim mb-4 tracking-widest uppercase">
+                Initialize System
+            </div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background max-w-3xl leading-tight mb-6">
+                नमस्ते, मैं आदिब बैगा हूँ<br/>
+<span class="text-primary-fixed-dim">Namaste, I am Aadib Baiga</span>
+</h1>
+<p class="font-headline-md text-headline-md text-on-surface-variant max-w-2xl mb-10">
+                डेटा साइंटिस्ट | डेटा के माध्यम से भविष्य को आकार देना<br/>
+<span class="text-body-base">Data Scientist | Shaping the future through data</span>
+</p>
+<div class="flex gap-4">
+<a class="bg-primary-fixed-dim text-on-primary-fixed px-8 py-3 rounded font-headline-md text-[18px] hover:bg-primary-fixed transition-colors shadow-[0_0_15px_rgba(0,220,229,0.3)]" href="mailto:Ashish.baiga@com">
+                    मुझसे संपर्क करें (Contact Me)
+                </a>
+<a class="border border-primary-fixed-dim text-primary-fixed-dim px-8 py-3 rounded font-headline-md text-[18px] hover:bg-primary-fixed-dim/10 transition-colors" href="#projects">
+                    View Data Models
+                </a>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap relative" id="about">
+<div class="ambient-glow right-[-10vw] top-20"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-5">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-4 border-l-4 border-primary-fixed-dim pl-4">
+                        Analytical Engine<br/><span class="text-primary-fixed-dim text-[24px]">परिचय (About)</span>
+</h2>
+</div>
+<div class="md:col-span-7 glass-card p-8 rounded-xl">
+<div class="font-body-base text-body-base text-on-surface-variant space-y-6">
+<p>
+                            With a deep-rooted passion for uncovering hidden patterns within complex datasets, I specialize in transforming raw information into actionable strategic insights. My core expertise lies in developing robust Machine Learning pipelines, executing rigorous Statistical Analysis, and architecting scalable Big Data solutions.
+                        </p>
+<p>
+                            जटिल डेटासेट के भीतर छिपे पैटर्न को उजागर करने के गहरे जुनून के साथ, मैं कच्चे जानकारी को कार्रवाई योग्य रणनीतिक अंतर्दृष्टि में बदलने में विशेषज्ञ हूँ। मेरी मुख्य विशेषज्ञता मजबूत मशीन लर्निंग पाइपलाइन विकसित करने, कठोर सांख्यिकीय विश्लेषण करने और स्केलेबल बिग डेटा समाधानों को आर्किटेक्ट करने में है।
+                        </p>
+<div class="pt-4 border-t border-white/10 flex flex-wrap gap-3">
+<span class="font-code-label text-code-label text-primary-fixed-dim bg-primary-fixed-dim/10 px-3 py-1 rounded">Machine Learning</span>
+<span class="font-code-label text-code-label text-primary-fixed-dim bg-primary-fixed-dim/10 px-3 py-1 rounded">Statistical Analysis</span>
+<span class="font-code-label text-code-label text-primary-fixed-dim bg-primary-fixed-dim/10 px-3 py-1 rounded">Big Data Architecture</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-section-gap" id="projects">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-12 border-l-4 border-primary-fixed-dim pl-4">
+                Data Models<br/><span class="text-primary-fixed-dim text-[24px]">परियोजनाएं (Projects)</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Project 1 -->
+<article class="glass-card rounded-xl overflow-hidden group hover:border-primary-fixed-dim/50 transition-colors duration-300">
+<div class="h-48 w-full relative overflow-hidden bg-surface-container-high" data-alt="A sleek, futuristic data visualization dashboard displaying predictive analytics. The interface features high-contrast neon teal and deep obsidian charts, graphs, and heatmaps. The lighting is sophisticated and moody, resembling a high-tech command center in a data science laboratory. The aesthetic is modern, minimalist, and highly analytical." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBv7-VsA2U-0ZAOu73_RR6NkB27L0zv6zk3xun84b_pFk825PLPp_vOV0HO1Ru-bk-JtML_Pvsal2roJ0eh5h7egBvr9b73jKxTBY5UZRGa5sFfzTlpBi83aFMmbWx96pLYCvTncCpQ6J2iqXgcckVKozujZvuPcZoXfG92nY_N4-69r6ckbwxuMJjK5vn6lEEpBal_1tDVN2OR_6TrI14lArtgnbECixdEYlyLsiC9qOuZlzYAx-byXA')">
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-300"></div>
+</div>
+<div class="p-6">
+<div class="font-code-label text-code-label text-primary-fixed-dim mb-3">Time-Series | XGBoost</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Predictive Analytics Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                            Developed a highly accurate forecasting model predicting market trends with 94% accuracy, utilizing advanced time-series analysis and gradient boosting techniques.
+                        </p>
+<a class="inline-flex items-center gap-2 font-code-label text-code-label text-on-background hover:text-primary-fixed-dim transition-colors" href="#">
+                            View Repository <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="glass-card rounded-xl overflow-hidden group hover:border-primary-fixed-dim/50 transition-colors duration-300">
+<div class="h-48 w-full relative overflow-hidden bg-surface-container-high" data-alt="A conceptual representation of Natural Language Processing. Glowing text streams in various languages, including Hindi and English, float in a dark, dimensional space. Deep blue and charcoal hues dominate the background, while the text elements emit a soft, electric teal glow. The mood is analytical and intelligent, representing sentiment extraction." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPj7s7Wgqhd22s_aQZkOeH-QZMfmrGoi6rXklLVEnLiztVbNEj_oze0DSWFkQXCamaHAUkxWWAj4mOAvnnmDRiK-hslfeMbDkyFpyWQsPLYU61t24Wa3lsAzKpTYeXNfGSvNswxn7DgwUYvuNZj15CL94hvaj2khfwwbbp-sE6QK9laD1-Wvhfu6uV1QITUPYv1FSCoE0Z5okLr-buxkbyRJxGnkLF80XXdFqvyMMGaQuO5fKAGlOG9w')">
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-300"></div>
+</div>
+<div class="p-6">
+<div class="font-code-label text-code-label text-primary-fixed-dim mb-3">NLP | BERT | PyTorch</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Multilingual Sentiment NLP</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                            Architected a robust NLP pipeline capable of performing real-time sentiment analysis on social data streams in both English and Hindi dialects.
+                        </p>
+<a class="inline-flex items-center gap-2 font-code-label text-code-label text-on-background hover:text-primary-fixed-dim transition-colors" href="#">
+                            View Repository <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="glass-card rounded-xl overflow-hidden group hover:border-primary-fixed-dim/50 transition-colors duration-300">
+<div class="h-48 w-full relative overflow-hidden bg-surface-container-high" data-alt="A detailed, interactive data visualization dashboard displayed on a sleek monitor. The UI is composed of translucent glassmorphism panels overlaid on a dark, dotted grid background. Complex scatter plots and network graphs are highlighted in vibrant electric teal against the charcoal interface. The aesthetic is clean, professional, and data-driven." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4oIDwfKe-iu_3dPSYH8Kqfdn-NWMCg7li9N45HcoQfLTcezb-pz2sN6JhVMD4U_x04dFPvF3CDaf6PNIHZr94crMzxCX7O0eyn8CA2HN93-rPoIFNzxz44Q215nhcXIXnhXKnNZX4rJG85eCzptG5OmcHX5jUKXHBgA0d0iPkfZY-ojbKN8P1hmAXr8Rsq88ReRbDP89-iTmBmbSPpMFnRVYw7C1NlasIEJJFetwG4JtdGvR-3icQPA')">
+<div class="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-300"></div>
+</div>
+<div class="p-6">
+<div class="font-code-label text-code-label text-primary-fixed-dim mb-3">Tableau | D3.js | SQL</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Executive Macro Dashboard</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                            Designed and deployed an interactive visual dashboard that consolidated 5 distinct massive data sources, reducing executive reporting time by 70%.
+                        </p>
+<a class="inline-flex items-center gap-2 font-code-label text-code-label text-on-background hover:text-primary-fixed-dim transition-colors" href="#">
+                            View Repository <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-section-gap relative" id="skills">
+<div class="ambient-glow left-[10vw] top-[30%]"></div>
+<div class="glass-card p-10 rounded-xl border border-white/5 shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-4 border-l-4 border-primary-fixed-dim pl-4">
+                            Technical Matrix<br/><span class="text-primary-fixed-dim text-[24px]">कौशल (Skills)</span>
+</h2>
+<p class="font-body-base text-body-base text-on-surface-variant mt-6">
+                            A curated stack of tools and frameworks employed to extract signal from noise. Proficiency spans statistical programming, deep learning architectures, and visualization engineering.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 justify-start lg:justify-end">
+<!-- Chips -->
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            Python
+                        </div>
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            R
+                        </div>
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            SQL
+                        </div>
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            TensorFlow
+                        </div>
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            PyTorch
+                        </div>
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            Tableau
+                        </div>
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            Scikit-Learn
+                        </div>
+<div class="px-5 py-3 border border-outline-variant rounded-full text-on-background font-code-label text-code-label hover:border-primary-fixed-dim hover:text-primary-fixed-dim transition-colors bg-surface-container-low/50">
+                            Pandas
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap text-center relative" id="contact">
+<div class="ambient-glow left-[30%] top-[10%]"></div>
+<div class="max-w-3xl mx-auto glass-card p-12 rounded-xl">
+<div class="font-code-label text-code-label text-primary-fixed-dim mb-4 tracking-widest uppercase">
+                    Initialize Connection
+                </div>
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-8">
+                    चलो साथ मिलकर काम करते हैं<br/>
+<span class="text-on-surface-variant text-[32px] md:text-[40px]">Let's work together</span>
+</h2>
+<div class="inline-block p-[1px] bg-gradient-to-r from-transparent via-primary-fixed-dim to-transparent mb-8 w-full max-w-md"></div>
+<div class="flex flex-col items-center justify-center gap-6 mt-4">
+<a class="font-headline-md text-[24px] md:text-[32px] text-primary-fixed-dim hover:text-primary-fixed transition-colors flex items-center gap-3 group" href="mailto:Ashish.baiga@com">
+<span class="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform">mail</span>
+                        Ashish.baiga@com
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-gutter flex flex-col md:flex-row justify-between items-center gap-unit bg-surface-dim border-t border-white/10 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary-fixed-dim">
+            Aadib Baiga
+        </div>
+<div class="text-on-surface-variant font-body-sm text-body-sm text-center md:text-left">
+            © 2024 Aadib Baiga. Built with precision and data.
+        </div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors hover:opacity-80 font-code-label text-code-label" href="#">Email</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors hover:opacity-80 font-code-label text-code-label" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors hover:opacity-80 font-code-label text-code-label" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary-fixed-dim transition-colors hover:opacity-80 font-code-label text-code-label" href="#">Source Code</a>
+</div>
+</footer>
+</body></html>
